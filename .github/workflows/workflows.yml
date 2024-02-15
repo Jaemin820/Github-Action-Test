@@ -13,5 +13,11 @@ jobs:
         uses: karancode/yamllint-github-action@master
         with:
           yamllint_file_or_dir: './test.yml'
-          yamllint_strict: false
+          yamllint_strict: true
           yamllint_comment: true
+      - name: Run python script
+        run: |
+          echo "test Success"
+
+
+      
