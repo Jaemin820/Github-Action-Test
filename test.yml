@@ -9,7 +9,7 @@ alerting:
           # - alertmanager:9093
           # - "localhost:9093"
 
- scrape_configs:
+scrape_configs:
   - job_name: "prometheus"
     scrape_interval: 5s
     static_configs:
