@@ -14,7 +14,7 @@ jobs:
           sudo apt-get install -y prometheus
       
       - name: Check nodeinfra_prometheus.yml file
-        run: promtool check config nodeinfra_prometheus.yml   
+        run: promtool check config nodeinfra_prometheus.yml
 
       - uses: ibiqlik/action-yamllint@v3
         name: Check file_sd/*.yml files
@@ -33,6 +33,3 @@ jobs:
       - name: Run python script
         run: |
           echo "test Success"
-
-
-      
