@@ -4,47 +4,34 @@ on:
     branches: [ main ]
 jobs:
   build:
-    # name: yamllint
-    # runs-on: ubuntu-latest
-    # steps:
-    #   - uses: actions/checkout@v3
-    #   - name: yaml-lint
-    #     uses: ibiqlik/action-yamllint@v3
-    #     with:
-    #       file_or_dir: ./test.yml
-    #       config_data: |
-    #         extends: default
-    #         rules:
-    #           new-line-at-end-of-file:
-    #             level: warning
-    #           trailing-spaces:
-    #             level: warning
-    #           line-length:
-    #             level: warning
+    name: yamllint
     runs-on: ubuntu-latest
-
     steps:
-    - uses: actions/checkout@v2
-      name: Checkout code
+      - uses: actions/checkout@v3
+      - name: Install promtool
+        run: |
+          sudo apt-get update
+          sudo apt-get install -y prometheus
+      
+      - name: Check main config file
+        run: promtool check config nodeinfra_prometheus.yml   
 
-    - name: Install promtool
-      run: |
-        sudo apt-get update
-        sudo apt-get install -y prometheus
+      - uses: ibiqlik/action-yamllint@v3
+        with:
+          file_or_dir: ./file_sd/*.yml
+          config_data: |
+            extends: default
+            rules:
+              new-line-at-end-of-file:
+                level: warning
+              trailing-spaces:
+                level: warning
+              line-length:
+                level: warning
 
-    - name: Check main config file
-      run: promtool check config nodeinfra_prometheus.yml 
-  
-    - name: Check all config files in file_sd directory
-      run: |
-        for file in file_sd/*.yml; do
-          echo "Checking $file"
-          promtool check config $file
-        done
-
-    - name: Run python script
-      run: |
-        echo "test Success"
+      - name: Run python script
+        run: |
+          echo "test Success"
 
 
       
