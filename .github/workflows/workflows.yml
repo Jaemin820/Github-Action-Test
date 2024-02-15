@@ -13,10 +13,11 @@ jobs:
           sudo apt-get update
           sudo apt-get install -y prometheus
       
-      - name: Check main config file
+      - name: Check nodeinfra_prometheus.yml file
         run: promtool check config nodeinfra_prometheus.yml   
 
       - uses: ibiqlik/action-yamllint@v3
+        name: Check file_sd/*.yml files
         with:
           file_or_dir: ./file_sd/*.yml
           config_data: |
