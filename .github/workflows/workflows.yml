@@ -32,8 +32,15 @@ jobs:
         sudo apt-get update
         sudo apt-get install -y prometheus
 
-    - name: Check config with promtool
-      run: promtool check config ./nodeinfra_prometheus.yml
+    - name: Check main config file
+      run: promtool check config nodeinfra_prometheus.yml 
+  
+    - name: Check all config files in file_sd directory
+      run: |
+        for file in file_sd/*.yml; do
+          echo "Checking $file"
+          promtool check config $file
+        done
 
     - name: Run python script
       run: |
