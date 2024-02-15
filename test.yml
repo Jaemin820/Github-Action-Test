@@ -25,13 +25,13 @@ scrape_configs:
   - job_name: "prod-customMetric"
     file_sd_configs:
       - files:
-        - /home/ubuntu/nodeinfra-prometheus/file_sd/prod-customMetric.yml
+          - /home/ubuntu/nodeinfra-prometheus/file_sd/prod-customMetric.yml
 
 # ----------------------------------------- Healthcheck ------------------------------------------------ 
   - job_name: "prod-healthcheck"
     file_sd_configs:
       - files:
-        - /home/ubuntu/nodeinfra-prometheus/file_sd/prod-healthcheck.yml
+          - /home/ubuntu/nodeinfra-prometheus/file_sd/prod-healthcheck.yml
 
 
 
@@ -39,32 +39,32 @@ scrape_configs:
   - job_name: "prod-APT-mainnet-validator"
     file_sd_configs:
       - files:
-        - /home/ubuntu/nodeinfra-prometheus/file_sd/prod-APT-mainnet-validator.yml
+          - /home/ubuntu/nodeinfra-prometheus/file_sd/prod-APT-mainnet-validator.yml
       
   - job_name: "prod-APT-mainnet-vfn"
     file_sd_configs:
       - files:
-        - /home/ubuntu/nodeinfra-prometheus/file_sd/prod-APT-mainnet-vfn.yml
+          - /home/ubuntu/nodeinfra-prometheus/file_sd/prod-APT-mainnet-vfn.yml
       
   - job_name: "prod-APT-mainnet-indexer"
     file_sd_configs:
       - files:
-        - /home/ubuntu/nodeinfra-prometheus/file_sd/prod-APT-mainnet-indexer.yml
+          - /home/ubuntu/nodeinfra-prometheus/file_sd/prod-APT-mainnet-indexer.yml
       
   - job_name: "prod-APT-mainnet-econiaIndexer"
     file_sd_configs:
       - files:
-        - /home/ubuntu/nodeinfra-prometheus/file_sd/prod-APT-mainnet-econiaIndexer.yml
+          - /home/ubuntu/nodeinfra-prometheus/file_sd/prod-APT-mainnet-econiaIndexer.yml
 
   - job_name: "prod-APT-testnet-indexer"
     file_sd_configs:
       - files:
-        - /home/ubuntu/nodeinfra-prometheus/file_sd/prod-APT-testnet-indexer.yml
+          - /home/ubuntu/nodeinfra-prometheus/file_sd/prod-APT-testnet-indexer.yml
 
   - job_name: "prod-APT-testnet-econiaIndexer"
     file_sd_configs:
       - files:
-        - /home/ubuntu/nodeinfra-prometheus/file_sd/prod-APT-testnet-econiaIndexer.yml
+          - /home/ubuntu/nodeinfra-prometheus/file_sd/prod-APT-testnet-econiaIndexer.yml
 # -------------------------------------------------------------------------------------------------------------------------------------------------------------------
   # - job_name: "prod-APT-previewnet1-validator" 
   #   file_sd_configs:
@@ -95,65 +95,65 @@ scrape_configs:
   - job_name: "prod-NCG-mainnet-headless"
     file_sd_configs:
       - files:
-        - /home/ubuntu/nodeinfra-prometheus/file_sd/prod-NCG-mainnet-headless.yml
+          - /home/ubuntu/nodeinfra-prometheus/file_sd/prod-NCG-mainnet-headless.yml
 
 # ----------------------------------------- SUI  ------------------------------------------------ 
   - job_name: "prod-SUI-mainnet-validator"
     file_sd_configs:
       - files:
-        - /home/ubuntu/nodeinfra-prometheus/file_sd/prod-SUI-mainnet-validator.yml
+          - /home/ubuntu/nodeinfra-prometheus/file_sd/prod-SUI-mainnet-validator.yml
 
   - job_name: "prod-SUI-mainnet-fullnode"
     file_sd_configs:
       - files:
-        - /home/ubuntu/nodeinfra-prometheus/file_sd/prod-SUI-mainnet-fullnode.yml
+          - /home/ubuntu/nodeinfra-prometheus/file_sd/prod-SUI-mainnet-fullnode.yml
 
   - job_name: "prod-SUI-testnet-validator"
     file_sd_configs:
       - files:
-        - /home/ubuntu/nodeinfra-prometheus/file_sd/prod-SUI-testnet-validator.yml
+          - /home/ubuntu/nodeinfra-prometheus/file_sd/prod-SUI-testnet-validator.yml
           
 
   - job_name: "prod-SUI-testnet-fullnode"
     file_sd_configs:
       - files:
-        - /home/ubuntu/nodeinfra-prometheus/file_sd/prod-SUI-testnet-fullnode.yml
+          - /home/ubuntu/nodeinfra-prometheus/file_sd/prod-SUI-testnet-fullnode.yml
 
 # ----------------------------------------- HAVAH  ------------------------------------------------ 
   - job_name: "prod-HVH-mainnet-validator"
     file_sd_configs:
       - files:
-        - /home/ubuntu/nodeinfra-prometheus/file_sd/prod-HVH-mainnet-validator.yml
+          - /home/ubuntu/nodeinfra-prometheus/file_sd/prod-HVH-mainnet-validator.yml
   
   - job_name: "prod-HVH-mainnet-planet"
     file_sd_configs:
       - files:
-        - /home/ubuntu/nodeinfra-prometheus/file_sd/prod-HVH-mainnet-planet.yml
+          - /home/ubuntu/nodeinfra-prometheus/file_sd/prod-HVH-mainnet-planet.yml
         
   - job_name: "prod-HVH-mainnet-citizen"
     file_sd_configs:
       - files:
-        - /home/ubuntu/nodeinfra-prometheus/file_sd/prod-HVH-mainnet-citizen.yml
+          - /home/ubuntu/nodeinfra-prometheus/file_sd/prod-HVH-mainnet-citizen.yml
 
   - job_name: "prod-HVH-veganet-citizen"
     file_sd_configs:
       - files:
-        - /home/ubuntu/nodeinfra-prometheus/file_sd/prod-HVH-veganet-citizen.yml
+          - /home/ubuntu/nodeinfra-prometheus/file_sd/prod-HVH-veganet-citizen.yml
 # ----------------------------------------- DYDX  ------------------------------------------------ 
   - job_name: "prod-DYDX-testnet-validator"
     file_sd_configs:
       - files:
-        - /home/ubuntu/nodeinfra-prometheus/file_sd/prod-DYDX-testnet-validator.yml
+          - /home/ubuntu/nodeinfra-prometheus/file_sd/prod-DYDX-testnet-validator.yml
 
   - job_name: "prod-DYDX-mainnet-validator"
     file_sd_configs:
       - files:
-        - /home/ubuntu/nodeinfra-prometheus/file_sd/prod-DYDX-mainnet-validator.yml
+          - /home/ubuntu/nodeinfra-prometheus/file_sd/prod-DYDX-mainnet-validator.yml
 # ----------------------------------------- ETH  ------------------------------------------------ 
   - job_name: "prod-ETH-testnet"
     file_sd_configs:
       - files:
-        - /home/ubuntu/nodeinfra-prometheus/file_sd/prod-ETH-testnet.yml
+          - /home/ubuntu/nodeinfra-prometheus/file_sd/prod-ETH-testnet.yml
 
   - job_name: "prod-ETH-testnet-geth"
     metrics_path: /debug/metrics/prometheus
@@ -173,7 +173,7 @@ scrape_configs:
   - job_name: "prod-ETH-holesky-ssv"
     file_sd_configs:
       - files:
-        - /home/ubuntu/nodeinfra-prometheus/file_sd/prod-ETH-holesky-ssv.yml
+          - /home/ubuntu/nodeinfra-prometheus/file_sd/prod-ETH-holesky-ssv.yml
 
   - job_name: "prod-ETH-holesky-ssv-health"
     metrics_path: /health
@@ -207,34 +207,33 @@ scrape_configs:
   - job_name: "prod-ICP-mainnet-validator"
     file_sd_configs:
       - files:
-        - /home/ubuntu/nodeinfra-prometheus/file_sd/prod-ICP-mainnet-validator.yml
+          - /home/ubuntu/nodeinfra-prometheus/file_sd/prod-ICP-mainnet-validator.yml
 
 # -------------------------------------------------------------------------------------------------------------------------------------------------------------------
   - job_name: "internalProd"
     file_sd_configs:
       - files:
-        - /home/ubuntu/nodeinfra-prometheus/file_sd/internalProd.yml
+          - /home/ubuntu/nodeinfra-prometheus/file_sd/internalProd.yml
 
 # -------------------------------------------------------------------------------------------------------------------------------------------------------------------
   - job_name: "playground"
     file_sd_configs:
       - files:
-        - /home/ubuntu/nodeinfra-prometheus/file_sd/playground.yml
+          - /home/ubuntu/nodeinfra-prometheus/file_sd/playground.yml
 
 # ----------------------------------------- BERA  ------------------------------------------------
   - job_name: "prod-BERA-testnet-validator"
     file_sd_configs:
       - files:
-        - /home/ubuntu/nodeinfra-prometheus/file_sd/prod-BERA-testnet-validator.yml
+          - /home/ubuntu/nodeinfra-prometheus/file_sd/prod-BERA-testnet-validator.yml
 
 # ----------------------------------------- TIA  ------------------------------------------------
   - job_name: "prod-TIA-testnet-validator"
     file_sd_configs:
       - files:
-        - /home/ubuntu/nodeinfra-prometheus/file_sd/prod-TIA-testnet-validator.yml
+          - /home/ubuntu/nodeinfra-prometheus/file_sd/prod-TIA-testnet-validator.yml  
   
   - job_name: "prod-TIA-testnet-bridgenode"
     file_sd_configs:
       - files:
-        - /home/ubuntu/nodeinfra-prometheus/file_sd/prod-TIA-testnet-bridgenode.yml
-        
+          - /home/ubuntu/nodeinfra-prometheus/file_sd/prod-TIA-testnet-bridgenode.yml 
