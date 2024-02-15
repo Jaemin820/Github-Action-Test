@@ -1,0 +1,9 @@
+- targets: ["34.83.77.173:9100", "34.83.77.173:8080", "aptos-mainnet-econia.nodeinfra.com"]
+  labels:
+    deployment: production
+    chain: APT
+    network: mainnet
+    servicetype: econia_indexer
+    cloud: GCP
+    region: USW
+    node_name: econia-mainnet-usw-1

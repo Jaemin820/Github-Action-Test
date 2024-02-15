@@ -1,0 +1,6 @@
+- targets: ["148.113.8.66:9100", "148.113.8.66:26660"]
+  labels:
+    deployment: production
+    chain: TIA
+    network: testnet
+    servicetype: validator

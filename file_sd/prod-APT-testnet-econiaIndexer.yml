@@ -1,0 +1,9 @@
+- targets: ["34.83.242.202:9100", "34.83.242.202:8080", "aptos-testnet-econia.nodeinfra.com"]
+  labels:
+    deployment: production
+    chain: APT
+    network: testnet
+    servicetype: econia_indexer
+    cloud: GCP
+    region: usw
+    node_name: econia-tesnet-manual-instance
