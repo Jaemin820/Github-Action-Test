@@ -21,25 +21,23 @@ jobs:
     #             level: warning
     #           line-length:
     #             level: warning
-      name: 'Promtool'
-      runs-on: ${{ matrix.os }}
-      strategy:
-        matrix:
-          os: [ubuntu-latest]
-        fail-fast: true
-      steps:
-        - name: 'Checkout'
-          uses: actions/checkout@master
-        - name: 'Promtool Check'
-          uses: karancode/promtool-action@v0.0.1
-          with:
-            prom_version: '2.9.2'      
-            prom_check_subcommand: 'rules'
-            prom_check_files: './test.yml'
-            prom_comment: true
-        - name: Run python script
-          run: |
-            echo "test Success"
+    runs-on: ubuntu-latest
+
+    steps:
+    - uses: actions/checkout@v2
+      name: Checkout code
+
+    - name: Install promtool
+      run: |
+        sudo apt-get update
+        sudo apt-get install -y prometheus
+
+    - name: Check config with promtool
+      run: promtool check config ./test.yml
+
+    - name: Run python script
+      run: |
+        echo "test Success"
 
 
       
