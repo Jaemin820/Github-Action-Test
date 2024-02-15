@@ -1,4 +1,4 @@
-- targets: ["aptosmainnetvfn.mirny.io:9100","aptosmainnetvfn.mirny.io:9101"]
+- targets: ["aptosmainnetvfn.mirny.io:9100", "aptosmainnetvfn.mirny.io:9101"]
   labels:
     deployment: production
     chain: APT 
