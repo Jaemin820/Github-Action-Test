@@ -11,7 +11,7 @@ jobs:
       - name: yaml-lint
         uses: ibiqlik/action-yamllint@v3
         with:
-          file_or_dir: ./test.yal
+          file_or_dir: ./test.yml
       - name: Run python script
         run: |
           echo "test Success"
