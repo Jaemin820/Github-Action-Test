@@ -30,3 +30,4 @@
     cloud: aws
     region: seoul
     purpose: incident_management
+    
