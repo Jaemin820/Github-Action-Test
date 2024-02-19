@@ -27,8 +27,7 @@ jobs:
                 level: warning
               trailing-spaces:
                 level: warning
-              line-length:
-                level: warning
+              line-length: disable
 
       - name: Run python script
         run: |
