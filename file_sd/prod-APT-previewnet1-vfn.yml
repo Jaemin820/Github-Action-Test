@@ -1,3 +1,4 @@
+---
 - targets: ["apt-preview-vfn-1.nodeinfravalidators.com:9100", "apt-preview-vfn-1.nodeinfravalidators.com:9101"]
   labels:
     deployment: production

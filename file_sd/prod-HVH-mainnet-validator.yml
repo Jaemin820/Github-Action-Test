@@ -1,3 +1,4 @@
+---
 # havah validator mainnet
 - targets: ["104.198.0.186:9100", "104.198.0.186:9000"]
   labels:
@@ -8,7 +9,6 @@
     cloud: gcp
     region: oregon
     node_name: prod_HVH_mainnet_validator_org_1
-
 
 - targets: ["34.126.71.143:9100", "34.126.71.143:9000"]
   labels:

@@ -1,3 +1,4 @@
+---
 # havah mainnet planet
 - targets: ["148.113.152.33:9100"]
   labels:

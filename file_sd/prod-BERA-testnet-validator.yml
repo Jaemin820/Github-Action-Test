@@ -1,3 +1,4 @@
+---
 - targets: ["131.153.158.25:26660", "131.153.158.25:9100"]
   labels:
     deployment: production

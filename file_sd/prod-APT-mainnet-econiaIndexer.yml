@@ -1,3 +1,4 @@
+---
 - targets: ["34.83.77.173:9100", "34.83.77.173:8080", "aptos-mainnet-econia.nodeinfra.com"]
   labels:
     deployment: production

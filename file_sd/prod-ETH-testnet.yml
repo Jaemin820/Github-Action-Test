@@ -1,5 +1,5 @@
+---
 ## Ethereum Lido obol 
-
 - targets: ["104.199.220.82:9100", "104.199.220.82:8080", "104.199.220.82:3620"]
   labels:
     deployment: production
@@ -11,7 +11,6 @@
     node_name: prod_ETH_holeskyTestnet_validator_twn_1
     purpose: obol
     
-
 - targets: ["104.199.220.82:5054"]
   labels:
     deployment: production
@@ -23,4 +22,3 @@
     region: taiwan
     node_name: prod_ETH_holeskyTestnet_validator_twn_1
     purpose: obol
-    

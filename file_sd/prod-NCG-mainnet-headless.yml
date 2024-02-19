@@ -1,3 +1,4 @@
+---
 # ninechronicles headless
 - targets: ["sgp-nc-1.ninodes.com:9100"]
   labels:
