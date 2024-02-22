@@ -1,2 +1,2 @@
-# Github-Action-Test
-Github Action Test
+# github-action-yaml-check
+github action yaml check
