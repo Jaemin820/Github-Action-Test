@@ -19,7 +19,7 @@ rule_files:
 # -----------------------------------------------------------------------------
 # A scrape configuration containing exactly one endpoint to scrape:
 # Here it's Prometheus itself.
- scrape_configs:
+scrape_configs:
 # ----------------------------------------- Custom Metrics ------------------------------------------------ 
   - job_name: "prod-customMetric"
     file_sd_configs:
