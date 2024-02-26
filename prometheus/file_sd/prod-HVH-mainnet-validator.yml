@@ -9,7 +9,6 @@
     region: oregon
     node_name: prod_HVH_mainnet_validator_org_1
 
-
 - targets: ["34.126.71.143:9100", "34.126.71.143:9000"]
   labels:
     deployment: production
@@ -20,4 +19,3 @@
     cloud: gcp
     region: singapore
     node_name: prod_HVH_mainnet_validator_backup_sgp_1
-
