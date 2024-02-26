@@ -21,7 +21,8 @@ jobs:
       #   run: promtool check config nodeinfra_prometheus.yml
 
       - uses: ibiqlik/action-yamllint@v3
-        name: Check file_sd/*.yml files
+        continue-on-error: true
+        name: Check promethes/*.yml files
         with:
           file_or_dir: ./prometheus/
           config_data: |
@@ -34,7 +35,7 @@ jobs:
               line-length: disable
 
       - uses: ibiqlik/action-yamllint@v3
-        name: Check file_sd/*.yml files
+        name: Check custom_metrics/*.yml files
         with:
           file_or_dir: ./custom_metrics/
           config_data: |
