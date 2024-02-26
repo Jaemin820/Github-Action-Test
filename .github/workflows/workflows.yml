@@ -53,5 +53,6 @@ jobs:
       #         line-length: disable
 
       - name: Run python script
+        if: always()
         run: |
           echo "test Success"
