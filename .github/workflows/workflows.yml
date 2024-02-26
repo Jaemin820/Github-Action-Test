@@ -24,16 +24,8 @@ jobs:
         name: Check promethes/*.yml files
         with:
           file_or_dir: ../github-action-yaml-check/prometheus/file_sd/
-          config_data: |
-            extends: default
-            rules:
-              comments: disable
-              comments-indentation: disable
-              document-start: disable
-              new-line-at-end-of-file: disable
-              trailing-spaces: disable
-              line-length: disable
-
+          no_warnings: true
+          
       # - uses: ibiqlik/action-yamllint@v3
       #   name: Check promethes/*.yml files
       #   with:
