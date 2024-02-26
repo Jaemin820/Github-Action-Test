@@ -1,6 +1,6 @@
-- targets: ["aptosmainnet.mirny.io:9100","aptosmainnet.mirny.io:9101"]
+- targets: ["aptosmainnet.mirny.io:9100", "aptosmainnet.mirny.io:9101"]
   labels:
     deployment: production
-    chain: APT 
+    chain: APT
     network: mainnet
     servicetype: validator

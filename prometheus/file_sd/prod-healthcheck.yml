@@ -4,4 +4,3 @@
     deployment: production
     chain: APT
     purpose: healthcheck
-    
