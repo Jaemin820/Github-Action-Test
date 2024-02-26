@@ -1,4 +1,4 @@
-## Ethereum Lido obol 
+## Ethereum Lido obol
 - targets: ["104.199.220.82:9100", "104.199.220.82:8080", "104.199.220.82:3620"]
   labels:
     deployment: production
