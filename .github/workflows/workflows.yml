@@ -12,6 +12,10 @@ jobs:
         run: |
           sudo apt-get update
           sudo apt-get install -y prometheus
+
+      - name: find where
+        run: |
+          pwd
       
       - name: Check config nodeinfra_prometheus.yml file
         run: promtool check config nodeinfra_prometheus.yml
