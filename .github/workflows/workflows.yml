@@ -27,6 +27,7 @@ jobs:
           config_data: |
             extends: default
             rules:
+              document-start: disable
               new-line-at-end-of-file: disable
               trailing-spaces: disable
               line-length: disable
