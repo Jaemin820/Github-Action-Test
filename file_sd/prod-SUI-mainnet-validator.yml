@@ -1,7 +1,0 @@
-
-- targets: ["sui-mainnet.nodeinfravalidators.com:9100", "sui-mainnet.nodeinfravalidators.com:9184"]
-  labels:
-    deployment: production
-    chain: SUI
-    network: mainnet
-    servicetype: validator

@@ -1,0 +1,245 @@
+APT:
+  "131.153.202.55":
+    chain: APT
+    network: mainnet
+    servicetype: fullnode
+    cloud: ""
+    region: ""
+    host_header: "aptos-mainnet.nodeinfra.com"
+    is_nodeinfra_node: true
+  "131.153.13.19":
+    chain: APT
+    network: testnet
+    servicetype: fullnode
+    cloud: ""
+    region: ""
+    host_header: "aptos-testnet.nodeinfra.com"
+    is_nodeinfra_node: true
+  "51.210.3.155":
+    chain: APT
+    network: mainnet
+    servicetype: indexer_fullnode
+    cloud: OVH
+    region: roubaix
+    node_name: ext-prod-APT-mainnet-indexer-rbx-2
+    host_header: "aptos-mainnet.nodeinfra.com"
+    is_nodeinfra_node: true
+  "57.128.94.160":
+    chain: APT
+    network: testnet
+    servicetype: indexer_fullnode
+    cloud: OVH
+    region: roubaix
+    node_name: ext-prod-APT-testnet-indexer-rbx-1
+    host_header: "aptos-testnet.nodeinfra.com"
+    is_nodeinfra_node: true
+  "131.153.11.237":
+    chain: APT
+    network: mainnet
+    servicetype: econia_indexer
+    cloud: pheonixNap
+    region: phoenix
+    node_name: prod_ECO_mainnet_indexerFullnode_phx_1
+    host_header: "aptos-mainnet-econia.nodeinfra.com"
+    websocket: "34.83.77.173/eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJtb2RlIjoiciIsImNoYW5uZWxzIjpbIm1hcmtldF9yZWdpc3RyYXRpb25fZXZlbnQiLCJwbGFjZV9saW1pdF9vcmRlcl9ldmVudCIsInBsYWNlX21hcmtldF9vcmRlcl9ldmVudCIsInBsYWNlX3N3YXBfb3JkZXJfZXZlbnQiLCJmaWxsX2V2ZW50IiwiY2hhbmdlX29yZGVyX3NpemVfZXZlbnQiLCJjYW5jZWxfb3JkZXJfZXZlbnQiLCJyZWNvZ25pemVkX21hcmtldF9ldmVudCIsIm5ld19saW1pdF9vcmRlciIsInVwZGF0ZWRfbGltaXRfb3JkZXIiLCJuZXdfbWFya2V0X29yZGVyIiwibmV3X3N3YXBfb3JkZXIiXSwiaWF0IjoxNjk5NTQwMDcwfQ.S-mkmQGA-8ydFS6dCcGlPl4u0h6oVQVanNWMGu5QZnc"
+    is_nodeinfra_node: true
+  "131.153.159.201":
+    chain: APT
+    network: mainnet
+    servicetype: econia_indexer
+    cloud: pheonixNap
+    region: singapore
+    node_name: prod_ECO_mainnet_indexerFullnode_sgp_1
+    host_header: "aptos-mainnet-econia.nodeinfra.com"
+    websocket: "34.83.77.173/eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJtb2RlIjoiciIsImNoYW5uZWxzIjpbIm1hcmtldF9yZWdpc3RyYXRpb25fZXZlbnQiLCJwbGFjZV9saW1pdF9vcmRlcl9ldmVudCIsInBsYWNlX21hcmtldF9vcmRlcl9ldmVudCIsInBsYWNlX3N3YXBfb3JkZXJfZXZlbnQiLCJmaWxsX2V2ZW50IiwiY2hhbmdlX29yZGVyX3NpemVfZXZlbnQiLCJjYW5jZWxfb3JkZXJfZXZlbnQiLCJyZWNvZ25pemVkX21hcmtldF9ldmVudCIsIm5ld19saW1pdF9vcmRlciIsInVwZGF0ZWRfbGltaXRfb3JkZXIiLCJuZXdfbWFya2V0X29yZGVyIiwibmV3X3N3YXBfb3JkZXIiXSwiaWF0IjoxNjk5NTQwMDcwfQ.S-mkmQGA-8ydFS6dCcGlPl4u0h6oVQVanNWMGu5QZnc"
+    is_nodeinfra_node: true
+  "131.153.203.167":
+    chain: APT
+    network: testnet
+    servicetype: econia_indexer
+    cloud: pheonixNap
+    region: phoenix
+    node_name: prod_ECO_testnet_indexerFullnode_phx_1
+    host_header: "aptos-testnet-econia.nodeinfra.com"
+    websocket: "aptos-testnet-econia.nodeinfra.com/eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJtb2RlIjoiciIsImNoYW5uZWxzIjpbImZpbGxfZXZlbnQiXX0.kL0gVJ57ks8BTX_inM9vtS0quW7rRMONpG8-tPlU6iE"
+    is_nodeinfra_node: true
+  "125.253.92.101":
+    chain: APT
+    network: testnet
+    servicetype: econia_indexer
+    cloud: pheonixNap
+    region: singapore
+    node_name: prod_ECO_testnet_indexerFullnode_sgp_1
+    host_header: "aptos-testnet-econia.nodeinfra.com"
+    websocket: "aptos-testnet-econia.nodeinfra.com/eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJtb2RlIjoiciIsImNoYW5uZWxzIjpbImZpbGxfZXZlbnQiXX0.kL0gVJ57ks8BTX_inM9vtS0quW7rRMONpG8-tPlU6iE"
+    is_nodeinfra_node: true
+  "aptos-mainnet-econia.nodeinfra.com":
+    chain: APT
+    network: mainnet
+    servicetype: econia_indexer
+    cloud: ""
+    region: ""
+    node_name: aptos-mainnet-econia.nodeinfra.com
+    host_header: "aptos-mainnet-econia.nodeinfra.com"
+    websocket: "aptos-mainnet-econia.nodeinfra.com/eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJtb2RlIjoiciIsImNoYW5uZWxzIjpbImZpbGxfZXZlbnQiXX0.kL0gVJ57ks8BTX_inM9vtS0quW7rRMONpG8-tPlU6iE"
+    is_nodeinfra_node: true
+  "aptos-testnet-econia.nodeinfra.com":
+    chain: APT
+    network: testnet
+    servicetype: econia_indexer
+    cloud: ""
+    region: ""
+    node_name: aptos-testnet-econia.nodeinfra.com
+    host_header: "aptos-testnet-econia.nodeinfra.com"
+    websocket: "aptos-testnet-econia.nodeinfra.com/eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJtb2RlIjoiciIsImNoYW5uZWxzIjpbImZpbGxfZXZlbnQiXX0.kL0gVJ57ks8BTX_inM9vtS0quW7rRMONpG8-tPlU6iE"
+    is_nodeinfra_node: true
+  "34.80.189.205":
+    chain: APT
+    network: holesky
+    servicetype: validator
+    cloud: GCP
+    region: taiwan
+    node_name: prod_ETH_holeskyTestnet_validator_twn_2
+    purpose: ssv
+    is_nodeinfra_node: true
+  "fullnode.mainnet.aptoslabs.com/v1":
+    chain: APT
+    network: mainnet
+    servicetype: indexer_fullnode
+    region: aptoslabs
+    host_header: ""
+    is_nodeinfra_node: false
+  "fullnode.testnet.aptoslabs.com/v1":
+    chain: APT
+    network: testnet
+    servicetype: indexer_fullnode
+    region: aptoslabs
+    host_header: ""
+    is_nodeinfra_node: false
+SUI:
+  "57.128.98.9":
+    chain: SUI
+    network: mainnet
+    servicetype: fullnode
+    cloud: OVH
+    region: france
+    node_name : "ext-prod-SUI-mainnet-fullnode-1"
+    host_header: "sui-mainnet.nodeinfra.com"
+    apikey: 3VReXsvgeE783VyXnrzDtCRY3JhSPkJJ
+    is_nodeinfra_node: true
+  # "162.19.235.144":
+  #   chain: SUI
+  #   network: mainnet
+  #   servicetype: fullnode
+  #   cloud: OVH
+  #   region: germany
+  #   node_name : "ext-prod-SUI-mainnet-fullnode-2"
+  #   host_header: "sui-mainnet.nodeinfra.com"
+  #   apikey: 3VReXsvgeE783VyXnrzDtCRY3JhSPkJJ
+  #   is_nodeinfra_node: true
+  "15.235.13.194":
+    chain: SUI
+    network: testnet
+    servicetype: fullnode
+    cloud: OVH
+    region: canada
+    node_name : "ext-prod-SUI-testnet-fullnode-1"
+    host_header: "sui-testnet.nodeinfra.com"
+    apikey: 3VReXsvgeE783VyXnrzDtCRY3JhSPkJJ
+    is_nodeinfra_node: true
+  "fullnode.mainnet.sui.io":
+    chain: SUI
+    network: mainnet
+    servicetype: fullnode
+    region: sui_mysten
+    host_header: ""
+    is_nodeinfra_node: false
+  "fullnode.testnet.sui.io":
+    chain: SUI
+    network: testnet
+    servicetype: fullnode
+    region: sui_mysten
+    host_header: ""
+    is_nodeinfra_node: false
+
+NCG:
+  "ash-nc-1.ninodes.com":
+    chain: NCG
+    network: mainnet
+    servicetype: headless
+    cloud: pheonixNap
+    region: ashburn
+    node_name: prod_NCG_mainnet_headless_ash_1
+  "nld-nc-1.ninodes.com":
+    chain: NCG
+    network: mainnet
+    servicetype: headless
+    cloud: pheonixNap
+    region: netherland
+    node_name: prod_NCG_mainnet_headless_nld_1
+  "phx-nc-1.ninodes.com":
+    chain: NCG
+    network: mainnet
+    servicetype: headless
+    cloud: pheonixNap
+    region: phoenix
+    node_name: prod_NCG_mainnet_headless_phx_1
+  "sgp-nc-1.ninodes.com":
+    chain: NCG
+    network: mainnet
+    servicetype: headless
+    cloud: pheonixNap
+    region: singapore
+    node_name: prod_NCG_mainnet_headless_sgp_1
+  "sgp-nc-2.ninodes.com":
+    chain: NCG
+    network: mainnet
+    servicetype: headless
+    cloud: pheonixNap
+    region: singapore
+    node_name: prod_NCG_mainnet_headless_sgp_2
+  "backup-nc-1.ninodes.com":
+    chain: NCG
+    network: mainnet
+    servicetype: headless
+    cloud: pheonixNap
+    region: seoul
+    node_name: prod_NCG_mainnet_headless_backup_phx_1
+
+HVH:
+  "148.113.152.33":
+    chain: HVH
+    network: mainnet
+    servicetype: planet
+    cloud: OVH
+    region: canada
+    node_name: prod_HVH_mainnet_planet_can_1
+  "104.198.0.186":
+    chain: HVH
+    network: mainnet
+    servicetype: validator
+    cloud: GCP
+    region: oregon
+    node_name: prod_HVH_mainnet_validator_org_1
+  "34.126.71.143":
+    chain: HVH
+    network: mainnet
+    servicetype: citizen
+    purpose: validator_backup
+    cloud: GCP
+    region: singapore
+    node_name: prod_HVH_mainnet_validator_backup_sgp_1
+  "131.153.11.181":
+    chain: HVH
+    network: mainnet
+    servicetype: citizen
+    cloud: PhonixNap
+    region: phoenix
+    node_name: prod_HVH_mainnet_api_phx_1
+  "131.153.11.183":
+    chain: HVH
+    network: veganet
+    servicetype: citizen
+    cloud: PhonixNap
+    region: phoenix
+    node_name: prod_HVH_veganet_api_phx_1

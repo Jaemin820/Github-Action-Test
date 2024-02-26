@@ -1,0 +1,45 @@
+APT:
+  "mainnet-release":
+    chain: APT
+    network: mainnet
+    servicetype: validator
+    server_id: "945856774056083548"
+    channel_id: "1042502400507916349"
+  "node-announcements":
+    chain: APT
+    network: mainnet
+    servicetype: fullnode
+    server_id: "945856774056083548"
+    channel_id: "1044657390684995675"
+  "test-channel":
+    chain: TEST
+    network: test
+    servicetype: test
+    server_id: "1090795040856608829"
+    channel_id: "1090796588944867358"
+SUI:
+  "tn-validators-announcements":
+    chain: SUI
+    network: testnet
+    servicetype: validator
+    server_id: "916379725201563759"
+    channel_id: "1003660994381353101"
+  "mn-validators-announcements":
+    chain: SUI
+    network: mainnet
+    servicetype: validator
+    server_id: "916379725201563759"
+    channel_id: "1093852827627040768"
+  "node-announcements":
+    chain: SUI
+    network: mainnet
+    servicetype: fullnode
+    server_id: "916379725201563759"
+    channel_id: "1002231298888306718"
+BERA:
+  "valid-announcements":
+    chain: BERA
+    network: testnet
+    servicetype: validator
+    server_id: "924442927399313448"
+    channel_id: "1185349264130461828"

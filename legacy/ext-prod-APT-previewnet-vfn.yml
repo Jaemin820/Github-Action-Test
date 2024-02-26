@@ -1,7 +1,0 @@
-- targets: ["aptos-previewnet-vfn.nodeinfravalidators.com:9100", "aptos-previewnet-vfn.nodeinfravalidators.com:9101"]
-  labels:
-    direction: external
-    deployment: production
-    chain: APT
-    network: previewnet
-    servicetype: validator_fullnode

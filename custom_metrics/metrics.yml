@@ -1,0 +1,121 @@
+APT:
+  Aptos_Validator_Commission :
+    name : Aptos_Validator_Commission
+    help : "Commission_not_yet_unlocked of our aptos validator node (by Aptos CLI)"
+    labels : [owner, network, servicetype]
+  Aptos_Validator_Total_Stake :
+    name : Aptos_Validator_Total_Stake
+    help : "Total Stake of aptos validator node (by Aptos CLI)"
+    labels : [owner, network, servicetype]
+  Aptos_Price_On_Upbit :
+    name : Aptos_Price_On_Upbit
+    help : "Current market price of aptos on Upbit (by Upbit API)"
+    labels : [market, network, servicetype]
+  Aptos_Fullnode_Block_Height :
+    name : Aptos_Fullnode_Block_Height
+    help : "Fullnode block height by domain"
+    labels : [url, network, servicetype, cloud, region, node_name]
+  Aptos_Fullnode_Healthcheck :
+    name : Aptos_Fullnode_Healthcheck
+    help : "Fullnode health check value. healthy = 1, unhealthy = 0"
+    labels : [ip, network, servicetype, cloud, region, node_name]
+  Aptos_Fullnode_Up :
+    name : Aptos_Fullnode_Up
+    help : "If Fullnode is Up = 1, Down = 0"
+    labels : [url, network, servicetype, cloud, region, node_name]
+  Aptos_Econia_Indexer_Processor_Status :
+    name : Aptos_Econia_Indexer_Processor_Status
+    help : "last_success_version value in processor_status table in Aptos Econia Indexer"
+    labels : [network, servicetype, cloud, region, node_name]
+  Aptos_Econia_Indexer_Aggregator_User_Processed_Status :
+    name : Aptos_Econia_Indexer_Aggregator_User_Processed_Status
+    help : "aggregator_user_history_last_txn_version_processed value in processor_status table in Aptos Econia Indexer"
+    labels : [network, servicetype, cloud, region, node_name]
+  Aptos_SSV_Performance :
+    name : Aptos_SSV_Performance 
+    help : "ssv node performance in the past hour"
+    labels : [network, servicetype, cloud, region, node_name, purpose]
+  Aptos_Econia_API_Status : 
+    name : Aptos_Econia_API_Status
+    help : "api request status. healthy = 1, unhealthy = 0"
+    labels : [network, servicetype, cloud, region, node_name]
+  Aptos_Indexer_Processor_Status :
+    name : Aptos_Indexer_Processor_Status
+    help : "last_success_version value in processor_status table in Aptos Indexer"
+    labels : [network, servicetype, cloud, region, node_name, processor]
+  Aptos_Econia_Websocket_Status : 
+    name : Aptos_Econia_Websocket_Status
+    help : "websocket health check. healthy = 1, unhealthy = 0"
+    labels : [network, servicetype, cloud, region, node_name]
+SUI:
+  Sui_Validaotr_Gas_Price :
+    name : Sui_Validaotr_Gas_Price
+    help : "Current Epoch's Gas Price of Sui Nodeinfra Validator"
+    labels : [network]
+  Sui_Fullnode_Block_Height :
+    name : Sui_Fullnode_Block_Height
+    help : "Fullnode block height by domain"
+    labels : [url, network, servicetype, cloud, region, node_name]
+  Sui_Fullnode_Up :
+    name : Sui_Fullnode_Up
+    help : "If Fullnode DNS is Up = 1, Down = 0"
+    labels : [url, network, servicetype, cloud, region, node_name]
+  Sui_Fullnode_Healthcheck :
+    name : Sui_Fullnode_Healthcheck
+    help : "Fullnode health check value. healthy = 1, unhealthy = 0"
+    labels : [ip, network, servicetype, cloud, region, node_name]
+NCG:
+  NineChronicles_Headless_Blockheight :
+    name : NineChronicles_Headless_Blockheight
+    help : "Current Blockheight of Nine Choronicles Node."
+    labels : [node, network, servicetype, cloud, region, node_name]
+  NineChronicles_Headless_Peers :
+    name : NineChronicles_Headless_Peers
+    help : "Current Peers of Nine Choronicles Node."
+    labels : [node, network, servicetype, cloud, region, node_name]
+  NineChronicles_Headless_Clients :
+    name : NineChronicles_Headless_Clients
+    help : "Current Clients of Nine Choronicles Node."
+    labels : [node, network, servicetype, cloud, region, node_name]
+  NineChronicles_Headless_StagedTxs :
+    name : NineChronicles_Headless_StagedTxs
+    help : "Current Staged Transactions of Nine Choronicles Node."
+    labels : [node, network, servicetype, cloud, region, node_name]
+  NineChronicles_Headless_Version :
+    name : NineChronicles_Headless_Version
+    help : "Current Version of Nine Choronicles Node."
+    labels : [node, network, servicetype, cloud, region, node_name]
+  NineChronicles_Miner_Blockheight :
+    name : NineChronicles_Miner_Blockheight
+    help : "Current Blocktips of Nine Choronicles Miner Node."
+    labels : [node, network, servicetype, cloud, region, node_name]
+  NineChronicles_Headless_Node_Up :
+    name : NineChronicles_Headless_Node_Up
+    help : "If node is healthy, node_up = 1, if not, node_up = 0."
+    labels : [node, network, servicetype, cloud, region, node_name]
+HVH:
+  Havah_Planet_Healthcheck :
+    name : Havah_Planet_Healthcheck
+    help : "Current Status of Planets 0: Healthy, 1: Unhealthy"
+    labels : [planet_id, network, servicetype, cloud, region, node_name]
+  Havah_Planet_Reward :
+    name : Havah_Planet_Reward
+    help : "Reward of Planets in Current Term Sequence "
+    labels : [planet_id, current_term_sequence, network, servicetype, cloud, region, node_name]
+  Havah_Planet_Total_Reward :
+    name : Havah_Planet_Total_Reward
+    help : "Total Reward of Planets"
+    labels : [planet_id, network, servicetype, cloud, region, node_name]
+  Havah_Validator_Role :
+    name : Havah_Validator_Role
+    help : "Role of Havah Active Validator. 3: Validator + SEED, 1: SEED, 0: Citizen"
+    labels : [node_type, network, servicetype, cloud, region, node_name]
+  Havah_Citizen_Blockheight :
+    name : Havah_Citizen_Blockheight 
+    help : "Current Blockheight of Havah Citizen Node"
+    labels : [network, servicetype, cloud, region, node_name]
+NodeRelease:
+  Discord_Node_Upgrade_Check :
+    name : Discord_Node_Upgrade_Check
+    help : "Node Update Check"
+    labels : [chain, network, servicetype, channel, server_id, channel_id]
