@@ -23,9 +23,9 @@ jobs:
       - uses: ibiqlik/action-yamllint@v3
         name: Check promethes/*.yml files
         with:
-          file_or_dir: ../github-action-yaml-check/prometheus/file_sd/
+          file_or_dir: ../github-action-yaml-check/
           no_warnings: true
-          
+
       # - uses: ibiqlik/action-yamllint@v3
       #   name: Check promethes/*.yml files
       #   with:
@@ -39,18 +39,18 @@ jobs:
       #           level: warning
       #         line-length: disable
 
-      - uses: ibiqlik/action-yamllint@v3
-        name: Check custom_metrics/*.yml files
-        with:
-          file_or_dir: ./custom_metrics/
-          config_data: |
-            extends: default
-            rules:
-              new-line-at-end-of-file:
-                level: warning
-              trailing-spaces:
-                level: warning
-              line-length: disable
+      # - uses: ibiqlik/action-yamllint@v3
+      #   name: Check custom_metrics/*.yml files
+      #   with:
+      #     file_or_dir: ./custom_metrics/
+      #     config_data: |
+      #       extends: default
+      #       rules:
+      #         new-line-at-end-of-file:
+      #           level: warning
+      #         trailing-spaces:
+      #           level: warning
+      #         line-length: disable
 
       - name: Run python script
         run: |
