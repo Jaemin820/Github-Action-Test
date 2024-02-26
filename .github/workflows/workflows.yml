@@ -20,11 +20,11 @@ jobs:
         name: Check promethes/*.yml files
         with:
           file_or_dir: ../github-action-yaml-check/prometheus/file_sd/
-          no_warnings: true
           config_data: |
             extends: default
             rules:
               new-line-at-end-of-file: disable
+          no_warnings: true
     
       # - uses: ibiqlik/action-yamllint@v3
       #   name: Check promethes/*.yml files
