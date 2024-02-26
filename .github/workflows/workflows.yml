@@ -19,11 +19,9 @@ jobs:
       - uses: ibiqlik/action-yamllint@v3
         name: Check promethes/*.yml files
         with:
-          file_or_dir: ./prometheus/
+          file_or_dir: ./prometheus/file_*/
           config_data: |
             extends: default
-            ignore: config_files/
-            ignore: legacy/
             rules:
               line-length: disable
           no_warnings: true
