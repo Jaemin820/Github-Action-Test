@@ -23,7 +23,7 @@ jobs:
       - uses: ibiqlik/action-yamllint@v3
         name: Check file_sd/*.yml files
         with:
-          file_or_dir: ./file_sd/*.yml
+          file_or_dir: ./*/*.yml
           config_data: |
             extends: default
             rules:
