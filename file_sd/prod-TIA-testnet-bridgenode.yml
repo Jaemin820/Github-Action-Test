@@ -1,4 +1,3 @@
----
 - targets: ["148.113.17.50:9100"]
   labels:
     deployment: production

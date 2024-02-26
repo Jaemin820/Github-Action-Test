@@ -1,4 +1,3 @@
----
 - targets: ["localhost:9090", "localhost:9100"]
   labels:
     deployment: internal_production
@@ -15,7 +14,7 @@
     region: tokyo
     purpose: incident_management
 
-- targets: ["43.200.210.149:9100", "43.200.210.149:3000"]
+- targets: ["43.200.210.149:9100","43.200.210.149:3000"]
   labels:
     deployment: internal_production
     servicetype: teleport_cluster

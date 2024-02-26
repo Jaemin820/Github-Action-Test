@@ -1,7 +1,6 @@
----
-- targets: ["apt-preview-vfn-2.nodeinfravalidators.com:9100", "apt-preview-vfn-2.nodeinfravalidators.com:9101"]
+- targets: ["apt-preview-vfn-2.nodeinfravalidators.com:9100", "apt-preview-vfn-2.nodeinfravalidators.com:9101" ]
   labels:
     deployment: production
-    chain: APT
+    chain: APT 
     network: previewnet-2
     servicetype: validator_fullnode

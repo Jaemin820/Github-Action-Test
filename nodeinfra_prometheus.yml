@@ -32,6 +32,8 @@ scrape_configs:
       - files:
         - /home/ubuntu/nodeinfra-prometheus/file_sd/prod-healthcheck.yml
 
+
+
 # ----------------------------------------- APTOS ------------------------------------------------ 
   - job_name: "prod-APT-mainnet-validator"
     file_sd_configs:

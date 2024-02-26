@@ -1,10 +1,19 @@
----
-- targets: ["34.83.77.173:9100", "34.83.77.173:8080", "aptos-mainnet-econia.nodeinfra.com"]
+- targets: ["131.153.11.237:9100", "131.153.11.237:8080", "aptos-mainnet-econia.nodeinfra.com"]
   labels:
     deployment: production
     chain: APT
     network: mainnet
     servicetype: econia_indexer
-    cloud: GCP
-    region: USW
-    node_name: econia-mainnet-usw-1
+    cloud: PhoenixNAP
+    region: phoenix
+    node_name: prod_ECO_mainnet_indexerFullnode_phx_1
+
+- targets: ["131.153.159.201:9100", "131.153.159.201:8080", "aptos-mainnet-econia.nodeinfra.com"]
+  labels:
+    deployment: production
+    chain: APT
+    network: mainnet
+    servicetype: econia_indexer
+    cloud: PhoenixNAP
+    region: singapore
+    node_name: prod_ECO_mainnet_indexerFullnode_sgp_1

@@ -1,7 +1,7 @@
----
 - targets: ["dydx-testnet.nodeinfravalidators.com:9100", "dydx-testnet.nodeinfravalidators.com:26660"]
   labels:
     deployment: production
-    chain: DYDX
+    chain: DYDX 
     network: testnet
     servicetype: validator
+

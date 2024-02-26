@@ -1,10 +1,19 @@
----
-- targets: ["51.210.3.155:9100", "131.153.202.55:9101", "51.210.3.155:9187", "51.210.3.155:8001"]
+- targets: ["51.210.3.155:9100", "51.210.3.155:9187", "51.210.3.155:8001"]
   labels:
     deployment: production
     chain: APT
     network: mainnet
     servicetype: indexer_fullnode
+    cloud: OVH
+    region: roubaix
+    node_name: prod_APT_mainnet_indexerFullnode_rbx_1
+
+- targets: ["131.153.202.55:9101", "131.153.202.55:9100", "131.153.202.55:8001"]
+  labels:
+    deployment: production
+    chain: APT
+    network: mainnet
+    servicetype: fullnode
     cloud: OVH
     region: roubaix
     node_name: prod_APT_mainnet_indexerFullnode_rbx_1

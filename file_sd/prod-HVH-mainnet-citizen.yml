@@ -1,9 +1,8 @@
----
 # havah mainnet citizen
 - targets: ["havah-mainnet.nodeinfra.com", "131.153.11.181:9100"]
   labels:
     deployment: production
-    chain: HVH
+    chain: HVH 
     network: mainnet
     servicetype: citizen
     cloud: PhoenixNAP

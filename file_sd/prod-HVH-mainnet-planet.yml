@@ -1,9 +1,8 @@
----
 # havah mainnet planet
 - targets: ["148.113.152.33:9100"]
   labels:
     deployment: production
-    chain: HVH
+    chain: HVH 
     network: mainnet
     servicetype: planet
     cloud: OVH

@@ -1,0 +1,242 @@
+# my global config
+global:
+  scrape_interval: 15s # Set the scrape interval to every 15 seconds. Default is every 1 minute.
+  evaluation_interval: 15s # Evaluate rules every 15 seconds. The default is every 1 minute.
+  # scrape_timeout is set to the global default (10s).
+
+# Alertmanager configuration
+alerting:
+  alertmanagers:
+    - static_configs:
+        - targets:
+          # - alertmanager:9093
+
+# Load rules once and periodically evaluate them according to the global 'evaluation_interval'.
+rule_files:
+  # - "first_rules.yml"
+  # - "second_rules.yml"
+
+# -----------------------------------------------------------------------------
+# A scrape configuration containing exactly one endpoint to scrape:
+# Here it's Prometheus itself.
+# -------------------------------------------------------------------------------------------------------------------------------------------------------------------
+scrape_configs:
+  - job_name: "ext-prod"
+    file_sd_configs:
+      - files:
+        - /home/ubuntu/prometheus-2.38.0.linux-amd64/file_sd/ext-prod.yml
+  # APTOS -----------------------------------------------------------------
+  # aptos indexer db : postgres exporter
+    static_configs:
+      - targets: ["aptos-mainnet.nodeinfra.com:9187"]
+        labels:
+          ext_int: ext
+          prod_test: prod
+          customer: aptos
+          chain: aptos 
+          nodetype: indexer_fullnode
+          network: mainnet
+          program: pgexporter
+
+      - targets: ["aptos-testnet.nodeinfra.com:9187"]
+        labels:
+          ext_int: ext
+          prod_test: prod
+          customer: aptos
+          chain: aptos 
+          nodetype: indexer_fullnode
+          network: testnet
+          program: pgexporter
+
+  # aptos indexer metrics and node metrics
+      - targets: ["aptos-mainnet.nodeinfra.com:9100", "aptos-mainnet.nodeinfra.com:9101"]
+        labels:
+          ext_int: ext
+          prod_test: prod
+          customer: aptos
+          chain: aptos 
+          nodetype: indexer_fullnode
+          network: mainnet
+
+  # aptos indexer kong metrics
+      - targets: ["aptos-mainnet.nodeinfra.com:9100","aptos-mainnet.nodeinfra.com:8001","aptos-mainnet.nodeinfra.com:9101"]
+        labels:
+          ext_int: ext
+          prod_test: prod
+          customer: aptos
+          chain: aptos 
+          nodetype: indexer_fullnode
+          network: mainnet
+          program: kong
+
+      - targets: ["aptos-testnet.nodeinfra.com:9100","aptos-testnet.nodeinfra.com:8001", "aptos-testnet.nodeinfra.com:9101"]
+        labels:
+          ext_int: ext
+          prod_test: prod
+          customer: npixel
+          chain: aptos 
+          nodetype: indexer_fullnode
+          network: testnet
+          program: kong
+
+  # aptos mainnet
+  # aptos validator 
+      - targets: ["aptosmainnet.mirny.io:9101","aptosmainnet.mirny.io:9100"]
+        labels:
+          ext_int: ext
+          prod_test: prod
+          customer: aptos
+          chain: aptos 
+          nodetype: validator
+          network: mainnet
+
+  # aptos validator fullnode
+      - targets: ["aptosmainnetvfn.mirny.io:9101","aptosmainnetvfn.mirny.io:9100"]
+        labels:
+          ext_int: ext
+          prod_test: prod
+          customer: aptos
+          chain: aptos 
+          nodetype: validator_fullnode
+          network: mainnet
+
+
+  # aptos previewnet
+  # aptos validator previewnet
+      - targets: ["aptos-previewnet-validator.nodeinfravalidators.com:9100", "aptos-previewnet-validator.nodeinfravalidators.com:9101", "aptos-previewnet-vfn.nodeinfravalidators.com:9100", "aptos-previewnet-vfn.nodeinfravalidators.com:9101"]
+        labels:
+          ext_int: ext
+          prod_test: prod
+          customer: aptos
+          chain: aptos 
+          nodetype: validator
+          network: previewnet
+
+  # NineChronicles -----------------------------------------------------------------
+  # ninechronicles headless
+      - targets: ["tky-nc-1.ninodes.com:9100", "sgp-nc-1.ninodes.com:9100", "nj-nc-1.ninodes.com:9100", "la-nc-1.ninodes.com:9100", "fra-nc-1.ninodes.com:9100"]
+        labels:
+          ext_int: ext
+          prod_test: prod
+          customer: planetarium
+          chain: ninechronicles 
+          nodetype: headlessnode
+          network: mainnet
+
+      - targets: ["backup-nc-1.ninodes.com:9100"]
+        labels:
+          ext_int: ext
+          prod_test: prod
+          customer: planetarium
+          chain: ninechronicles 
+          nodetype: headlessnode
+          network: mainnet
+
+  #ninechronicles validator            
+      - targets: ["nc-val.ninodes.com:9100"]
+        labels:
+          ext_int: ext
+          prod_test: prod
+          customer: planetarium
+          chain: ninechronicles
+          nodetype: validator
+          network: mainnet
+            
+  # ninechronicles graphql custom metrics
+      - targets: ["13.124.239.97:8080"]
+        labels:
+          ext_int: ext
+          prod_test: prod
+          customer: planetarium
+          chain: ninechronicles 
+          network: mainnet
+          program: graphql_metric
+
+
+
+  # SUI -----------------------------------------------------------------
+      - targets: ["sui-testnet.nodeinfravalidators.com:9100", "sui-testnet.nodeinfravalidators.com:9184"]
+        labels:
+          ext_int: ext
+          prod_test: prod
+          customer: sui
+          chain: sui
+          nodetype: validator
+          network: testnetwave3
+
+
+  # HAVAH -----------------------------------------------------------------
+  # havah validator mainnet
+      - targets: ["148.113.152.33:9100", "13.124.239.97:8080"]
+        labels:
+          ext_int: ext
+          prod_test: prod
+          customer: havah
+          chain: havah 
+          nodetype: validator
+          network: mainnet
+
+
+# -------------------------------------------------------------------------------------------------------------------------------------------------------------------
+  - job_name: "ext-test"
+    file_sd_configs:
+      - files:
+        - /home/ubuntu/prometheus-2.38.0.linux-amd64/file_sd/ext-test.yml
+
+  # APTOS -----------------------------------------------------------------
+  # aptos indexer metrics and node metrics
+    static_configs:
+      - targets: ["aptos-testnet.nodeinfra.com:9100", "aptos-testnet.nodeinfra.com:9101"]
+        labels:
+          ext_int: ext
+          prod_test: test
+          customer: npixel
+          chain: aptos 
+          nodetype: indexer_fullnode
+          network: testnet
+
+  # Npixel test
+      - targets: ["167.179.82.207:9100", "167.179.82.207:8001", "167.179.82.207:9101"]
+        labels:
+          ext_int: ext
+          prod_test: test
+          customer: npixel
+          chain: aptos 
+          nodetype: publicfullnode
+
+      - targets: ["15.165.48.102:9101", "15.165.48.102:9100", "3.38.42.40:9100", "3.38.42.40:9101", "34.81.96.34:9101", "34.81.96.34:9100", "167.179.82.207:9100", "167.179.82.207:9101", "167.179.82.207:9102", "167.179.82.207:9103"]
+        labels:
+          ext_int: ext
+          prod_test: test
+          customer: npixel
+          chain: aptos 
+          nodetype: publicfullnode
+          network: testnet
+
+
+# -------------------------------------------------------------------------------------------------------------------------------------------------------------------
+  - job_name: "int-prod"
+    file_sd_configs:
+      - files:
+        - /home/ubuntu/prometheus-2.38.0.linux-amd64/file_sd/int-prod.yml
+  # healthcheck itself
+    static_configs:
+      - targets: ["localhost:9090", "localhost:9100"]
+        labels:
+          ext_int: internal
+          prod_test: prod
+          program: prometheus
+          region: seoul
+
+
+# -------------------------------------------------------------------------------------------------------------------------------------------------------------------
+  - job_name: "int-test"
+    file_sd_configs:
+      - files:
+        - /home/ubuntu/prometheus-2.38.0.linux-amd64/file_sd/int-test.yml
+
+    static_configs:
+      - targets: []
+
+
+

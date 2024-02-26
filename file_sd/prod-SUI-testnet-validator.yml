@@ -1,4 +1,3 @@
----
 - targets: ["sui-testnet.nodeinfravalidators.com:9100", "sui-testnet.nodeinfravalidators.com:9184"]
   labels:
     deployment: production
