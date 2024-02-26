@@ -1,0 +1,19 @@
+- targets: ["57.128.94.160:9100", "131.153.13.19:9101", "57.128.94.160:9187", "57.128.94.160:8001"]
+  labels:
+    deployment: production
+    chain: APT
+    network: testnet
+    servicetype: indexer_fullnode
+    cloud: OVH
+    region: roubaix
+    node_name: prod_APT_testnet_indexerFullnode_rbx_1
+
+- targets: ["131.153.13.19:9101", "131.153.13.19:9100", "131.153.13.19:8001"]
+  labels:
+    deployment: production
+    chain: APT
+    network: testnet
+    servicetype: fullnode
+    cloud: OVH
+    region: roubaix
+    node_name: prod_APT_testnet_indexerFullnode_rbx_1

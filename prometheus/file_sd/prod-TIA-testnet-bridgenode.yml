@@ -1,0 +1,9 @@
+- targets: ["148.113.17.50:9100"]
+  labels:
+    deployment: production
+    chain: TIA
+    network: testnet
+    servicetype: bridgenode
+    cloud: OVH
+    region: mumbai
+    node_name: prod_TIA_testnet_bridgenode_mum_1

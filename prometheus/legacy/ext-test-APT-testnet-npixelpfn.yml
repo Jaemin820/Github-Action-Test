@@ -1,0 +1,7 @@
+- targets: ["15.165.48.102:9101", "15.165.48.102:9100", "3.38.42.40:9100", "3.38.42.40:9101", "34.81.96.34:9101", "34.81.96.34:9100"]
+  labels:
+    direction: external
+    deployment: test
+    chain: APT 
+    network: testnet
+    servicetype: npixel_public_fullnode
