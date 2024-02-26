@@ -23,8 +23,7 @@ jobs:
           config_data: |
             extends: default
             rules:
-              new-line-at-end-of-file:
-                level: warning
+              line-length: disable
           no_warnings: true
     
       # - uses: ibiqlik/action-yamllint@v3

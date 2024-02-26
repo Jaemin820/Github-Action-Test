@@ -28,7 +28,7 @@
     cloud: PhoenixNAP
     region: phoenix
     node_name: prod_NCG_mainnet_headless_phx_1
-      
+
 - targets: ["ash-nc-1.ninodes.com:9100"]
   labels:
     deployment: production

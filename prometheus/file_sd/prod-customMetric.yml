@@ -19,10 +19,10 @@
 - targets: ["13.124.239.97:8480"]
   labels:
     deployment: production
-    chain: HVH 
+    chain: HVH
     purpose: custom_metric
 
-# ----------------------------------------- Upgrade Message ------------------------------------------------ 
+# ----------------------------------------- Upgrade Message ------------------------------------------------
 - targets: ["13.124.239.97:8080"]
   labels:
     deployment: production
