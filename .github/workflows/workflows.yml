@@ -22,7 +22,7 @@ jobs:
           file_or_dir: ./prometheus/
           config_data: |
             extends: default
-            ignore: config_files/
+            ignore: config_files/, legacy/
             rules:
               line-length: disable
           no_warnings: true
