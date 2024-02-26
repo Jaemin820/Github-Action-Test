@@ -17,13 +17,13 @@ jobs:
         run: |
           pwd
       
-      # - name: Check config nodeinfra_prometheus.yml file
-      #   run: promtool check config nodeinfra_prometheus.yml
+      - name: Check config nodeinfra_prometheus.yml file
+        run: promtool check config prometheus/nodeinfra_prometheus.yml
 
       - uses: ibiqlik/action-yamllint@v3
         name: Check promethes/*.yml files
         with:
-          file_or_dir: ../github-action-yaml-check/
+          file_or_dir: ../github-action-yaml-check/prometheus/file_sd/
           no_warnings: true
 
       # - uses: ibiqlik/action-yamllint@v3
