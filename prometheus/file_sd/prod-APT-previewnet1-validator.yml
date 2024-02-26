@@ -1,6 +1,6 @@
 - targets: ["apt-preview-vn-1.nodeinfravalidators.com:9100", "apt-preview-vn-1.nodeinfravalidators.com:9101"]
   labels:
     deployment: production
-    chain: APT 
+    chain: APT
     network: previewnet-1
     servicetype: validator

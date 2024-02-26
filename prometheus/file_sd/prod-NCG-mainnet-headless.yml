@@ -2,7 +2,7 @@
 - targets: ["sgp-nc-1.ninodes.com:9100"]
   labels:
     deployment: production
-    chain: NCG 
+    chain: NCG
     network: mainnet
     servicetype: headless
     cloud: PhoenixNAP
@@ -12,7 +12,7 @@
 - targets: ["sgp-nc-2.ninodes.com:9100"]
   labels:
     deployment: production
-    chain: NCG 
+    chain: NCG
     network: mainnet
     servicetype: headless
     cloud: PhoenixNAP
@@ -22,7 +22,7 @@
 - targets: ["phx-nc-1.ninodes.com:9100"]
   labels:
     deployment: production
-    chain: NCG 
+    chain: NCG
     network: mainnet
     servicetype: headless
     cloud: PhoenixNAP
@@ -32,7 +32,7 @@
 - targets: ["ash-nc-1.ninodes.com:9100"]
   labels:
     deployment: production
-    chain: NCG 
+    chain: NCG
     network: mainnet
     servicetype: headless
     cloud: PhoenixNAP
@@ -42,7 +42,7 @@
 - targets: ["backup-nc-1.ninodes.com:9100"]
   labels:
     deployment: production
-    chain: NCG 
+    chain: NCG
     network: mainnet
     servicetype: headless
     cloud: PhoenixNAP

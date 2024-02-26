@@ -1,7 +1,7 @@
 - targets: ["125.253.92.79:9100", "125.253.92.79:26660"]
   labels:
     deployment: production
-    chain: DYDX 
+    chain: DYDX
     network: mainnet
     servicetype: validator
 
