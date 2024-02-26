@@ -23,7 +23,7 @@ jobs:
       - uses: ibiqlik/action-yamllint@v3
         name: Check promethes/*.yml files
         with:
-          file_or_dir: ../github-action-yaml-check/
+          file_or_dir: ../github-action-yaml-check/prometheus/file_sd/
           config_data: |
             extends: default
             rules:
