@@ -43,11 +43,11 @@ jobs:
         if: success()
       
       - name: Deploy Stage Server
-        run: echo "Prometheus deploying to stage server"
+        run: echo "Prometheus deploying to stage server2"
         if: success()
       
       - name: Deploy Prod Server
-        run: echo "Prometheus deploying to prodcut server"
+        run: echo "Prometheus deploying to prodcut server2"
         if: success()
     
       # - uses: ibiqlik/action-yamllint@v3
