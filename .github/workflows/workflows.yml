@@ -21,7 +21,7 @@ jobs:
       - uses: ibiqlik/action-yamllint@v3
         name: Check promethes/*.yml files
         with:
-          file_or_dir: ./nodeinfra-prometheus/file_*/
+          file_or_dir: prometheus/file_*/
           config_data: |
             extends: default
             rules:
