@@ -1,7 +1,0 @@
-- targets: ["localhost:9090", "localhost:9100"]
-  labels:
-    deployment: internal_production
-    servicetype: prometheus
-    cloud: aws
-    region: california
-    purpose: incident_management

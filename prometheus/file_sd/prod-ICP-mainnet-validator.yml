@@ -1,6 +1,0 @@
-- targets: ["13.124.239.97:8000"]
-  labels:
-    deployment: production
-    chain: ICP
-    network: mainnet
-    servicetype: validator
