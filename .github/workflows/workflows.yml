@@ -22,9 +22,12 @@ jobs:
           sudo apt-get update
           sudo apt-get install -y prometheus
           promtool --version # Check promtool version to verify installation
+          
+      - name: pwd
+        run: pwd
 
       - name: Check config nodeinfra_prometheus.yml file
-        run: promtool check config prometheus/nodeinfra_prometheus.yml
+        run: promtool check config ./prometheus/nodeinfra_prometheus.yml
         if: success()
 
       - uses: ibiqlik/action-yamllint@v3
