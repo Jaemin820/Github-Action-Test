@@ -1,0 +1,9 @@
+- targets: ["131.153.11.131:9100"]
+  labels:
+    deployment: production
+    chain: BALON
+    network: testnet
+    servicetype: validator
+    cloud: PhoenixNAP
+    region: netherland
+    purpose: Cosmos

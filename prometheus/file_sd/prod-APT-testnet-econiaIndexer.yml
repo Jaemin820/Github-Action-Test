@@ -1,0 +1,9 @@
+- targets: ["131.153.203.167:9100", "131.153.203.167:8080", "131.153.203.167:9187", "131.153.203.167:2019", "aptos-testnet-econia.nodeinfra.com"]
+  labels:
+    deployment: production
+    chain: APT
+    network: testnet
+    servicetype: econia_indexer
+    cloud: PhoenixNAP
+    region: phoenix
+    node_name: prod_ECO_testnet_indexerFullnode_phx_1

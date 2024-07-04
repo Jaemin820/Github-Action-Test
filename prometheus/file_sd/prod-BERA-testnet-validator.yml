@@ -1,0 +1,9 @@
+- targets: ["64.130.50.123:26660", "64.130.50.123:9100"]
+  labels:
+    deployment: production
+    chain: BERA
+    network: testnet
+    servicetype: validator
+    cloud: Teraswitch
+    region: germany
+    purpose: Cosmos

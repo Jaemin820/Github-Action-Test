@@ -1,0 +1,10 @@
+- targets: ["216.18.206.182:9100"]
+  labels:
+    deployment: production
+    chain: TIA
+    network: testnet
+    servicetype: bridgenode
+    cloud: WebNX
+    region: Ogden
+    node_name: prod_TIA_testnet_bridgenode_ogden_1
+    purpose: Cosmos

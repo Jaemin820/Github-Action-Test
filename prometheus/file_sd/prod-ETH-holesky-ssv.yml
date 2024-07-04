@@ -1,0 +1,10 @@
+- targets: ["162.19.235.144:9100", "162.19.235.144:15000", "162.19.235.144:8080", "162.19.235.144:5054"]
+  labels:
+    deployment: production
+    chain: ETH
+    network: holesky
+    servicetype: validator
+    cloud: GCP
+    region: taiwan
+    node_name: prod_ETH_holeskyTestnet_validator_twn_2
+    purpose: ssv

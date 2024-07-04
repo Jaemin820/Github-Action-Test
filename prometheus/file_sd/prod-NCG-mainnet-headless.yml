@@ -1,0 +1,61 @@
+# ninechronicles headless
+- targets: ["sgp-nc-1.ninodes.com:9100"]
+  labels:
+    deployment: production
+    chain: NCG
+    network: mainnet
+    servicetype: headless
+    cloud: PhoenixNAP
+    region: singapore
+    node_name: prod_NCG_mainnet_headless_sgp_1
+
+- targets: ["sgp-nc-2.ninodes.com:9100"]
+  labels:
+    deployment: production
+    chain: NCG
+    network: mainnet
+    servicetype: headless
+    cloud: PhoenixNAP
+    region: singapore
+    node_name: prod_NCG_mainnet_headless_sgp_2
+
+- targets: ["phx-nc-1.ninodes.com:9100"]
+  labels:
+    deployment: production
+    chain: NCG
+    network: mainnet
+    servicetype: headless
+    cloud: PhoenixNAP
+    region: phoenix
+    node_name: prod_NCG_mainnet_headless_phx_1
+
+- targets: ["ash-nc-1.ninodes.com:9100"]
+  labels:
+    deployment: production
+    chain: NCG
+    network: mainnet
+    servicetype: headless
+    cloud: PhoenixNAP
+    region: ashburn
+    node_name: prod_NCG_mainnet_headless_ash_1
+
+- targets: ["backup-nc-1.ninodes.com:9100"]
+  labels:
+    deployment: production
+    chain: NCG
+    network: mainnet
+    servicetype: headless
+    cloud: PhoenixNAP
+    region: phoenix
+    node_name: prod_NCG_mainnet_headless_backup_phx_1
+    purpose: backup
+
+- targets: ["nld-nc-1.ninodes.com:9100"]
+  labels:
+    deployment: production
+    chain: NCG
+    network: mainnet
+    servicetype: headless
+    cloud: PhoenixNAP
+    region: netherland
+    node_name: prod_NCG_mainnet_headless_nld_1

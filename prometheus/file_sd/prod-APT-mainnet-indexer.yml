@@ -1,0 +1,9 @@
+- targets: ["141.94.160.21:9100", "141.94.160.21:9187", "141.94.160.21:2019"]
+  labels:
+    deployment: production
+    chain: APT
+    network: mainnet
+    servicetype: indexer_fullnode
+    cloud: OVH
+    region: france
+    node_name: prod_APT_mainnet_indexerFullnode_fra_1

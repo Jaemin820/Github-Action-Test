@@ -1,0 +1,20 @@
+# ---------------------------------- sui mainnet fullnode
+- targets: ["148.113.0.142:9100", "148.113.0.142:9184"]
+  labels:
+    deployment: production
+    chain: SUI
+    network: "mainnet"
+    servicetype: ssfn
+    cloud: OVH
+    region: mumbai
+    node_name: prod_SUI_ssfn_bom_1
+
+- targets: ["131.153.159.29:9100", "131.153.159.29:9184"]
+  labels:
+    deployment: production
+    chain: SUI
+    network: "mainnet"
+    servicetype: ssfn
+    cloud: PhoenixNAP
+    region: singapore
+    node_name: prod_SUI_ssfn_sgp_1

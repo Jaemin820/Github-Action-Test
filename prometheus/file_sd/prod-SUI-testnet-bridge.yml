@@ -1,0 +1,8 @@
+- targets: ["131.153.202.153:9100", "131.153.202.153:9184"]
+  labels:
+    deployment: production
+    chain: SUI
+    network: testnet
+    servicetype: bridge
+    cloud: PhoenixNAP
+    region: arizona

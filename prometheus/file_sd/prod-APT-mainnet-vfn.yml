@@ -1,0 +1,8 @@
+- targets: ["aptosmainnetvfn.mirny.io:9100", "aptosmainnetvfn.mirny.io:9101"]
+  labels:
+    deployment: production
+    chain: APT
+    network: mainnet
+    servicetype: validator_fullnode
+    cloud: OVH
+    region: singapore

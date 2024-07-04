@@ -1,0 +1,9 @@
+- targets: ["15.235.13.194:9100", "15.235.13.194:9184", "15.235.13.194:2019"]
+  labels:
+    deployment: production
+    chain: SUI
+    network: testnet
+    servicetype: fullnode
+    cloud: OVH
+    region: canada
+    node_name: prod_SUI_testnet_fullnode_can_1

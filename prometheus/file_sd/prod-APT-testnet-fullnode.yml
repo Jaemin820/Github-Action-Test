@@ -1,0 +1,9 @@
+- targets: ["131.153.13.19:9101", "131.153.13.19:9100", "131.153.13.19:2019"]
+  labels:
+    deployment: production
+    chain: APT
+    network: testnet
+    servicetype: fullnode
+    cloud: OVH
+    region: roubaix
+    node_name: prod_APT_testnet_Fullnode_rbx_1

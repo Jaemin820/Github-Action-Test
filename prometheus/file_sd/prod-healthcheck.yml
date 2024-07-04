@@ -1,0 +1,6 @@
+# ---------------------------------- health check
+- targets: ["13.124.239.97:5001"]
+  labels:
+    deployment: production
+    chain: APT
+    purpose: healthcheck

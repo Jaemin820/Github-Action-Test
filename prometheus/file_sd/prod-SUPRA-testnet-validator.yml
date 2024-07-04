@@ -1,0 +1,8 @@
+- targets: ["131.153.239.69:9100"]
+  labels:
+    deployment: production
+    chain: SUPRA
+    network: testnet
+    servicetype: validator
+    cloud: PhoenixNAP
+    region: arizona

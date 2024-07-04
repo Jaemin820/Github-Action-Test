@@ -1,0 +1,11 @@
+## Ethereum Lido obol
+- targets: ["202.8.9.132:9100", "202.8.9.132:8080", "202.8.9.132:3620", "202.8.9.132:5054", "202.8.9.132:8008", "202.8.9.132:5064"]
+  labels:
+    deployment: production
+    chain: ETH
+    network: mainnet
+    servicetype: validator
+    cloud: GCP
+    region: japan
+    node_name: prod_ETH_mainnet_validator_jp_1
+    purpose: obol

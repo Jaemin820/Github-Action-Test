@@ -1,0 +1,10 @@
+- targets: ["131.153.238.239:26660", "131.153.238.239:9100", "131.153.238.239:80"]
+  labels:
+    deployment: production
+    chain: BERA
+    network: testnet
+    servicetype: rpc
+    cloud: PhoenixNAP
+    region: arizona
+    node_name: prod_BERA_testnet_rpc_aza_1
+    purpose: Cosmos

@@ -1,0 +1,9 @@
+- targets: ["108.160.128.54:9100", "108.160.128.54:26660"]
+  labels:
+    deployment: production
+    chain: DYDX
+    network: testnet
+    servicetype: validator
+    cloud: Vultr
+    region: japan
+    purpose: Cosmos

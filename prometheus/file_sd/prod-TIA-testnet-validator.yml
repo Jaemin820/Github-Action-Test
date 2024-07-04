@@ -1,0 +1,9 @@
+- targets: ["125.253.92.7:9100", "125.253.92.7:26660"]
+  labels:
+    deployment: production
+    chain: TIA
+    network: testnet
+    servicetype: validator
+    cloud: PNAP
+    region: Singapore
+    purpose: Cosmos
