@@ -10,25 +10,13 @@ jobs:
       - name: Checkout repository
         uses: actions/checkout@v3 
 
-      - name: Cache apt packages
-        id: cache-apt
-        uses: actions/cache@v3
+      - name: Check Prometheus configs
+        uses: peimanja/promtool-github-actions@master
         with:
-          path: ~/.cache/apt
-          key: ${{ runner.os }}-apt-${{ hashFiles('**/promtool') }}
-          restore-keys: |
-            ${{ runner.os }}-apt-
-
-      - name: Install promtool
-        if: steps.cache-apt.outputs.cache-hit != 'true'
-        run: |
-          sudo apt-get update
-          sudo apt-get install -y prometheus
-
-      - name: Check config nodeinfra_prometheus.yml file
-        working-directory: ./prometheus
-        run: promtool check config nodeinfra_prometheus.yml
-        if: success()
+          promtool_actions_subcommand: 'config'
+          promtool_actions_files: 'prometheus/nodeinfra_prometheus.yml'
+          promtool_actions_version: '2.45.6'
+          promtool_actions_comment: true
 
       - uses: ibiqlik/action-yamllint@v3
         name: Check promethes/*.yml files
