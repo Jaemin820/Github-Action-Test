@@ -14,25 +14,32 @@ jobs:
         id: cache-apt
         uses: actions/cache@v3
         with:
-          path: /var/cache/apt
+          path: ~/.cache/apt
           key: ${{ runner.os }}-apt-${{ hashFiles('**/promtool') }}
           restore-keys: |
             ${{ runner.os }}-apt-
+  
+      - name: Set up cache directory
+        run: |
+          mkdir -p ~/.cache/apt/archives
+          sudo cp -r /var/cache/apt/archives ~/.cache/apt/
+          sudo cp -r ~/.cache/apt/archives /var/cache/apt/
 
       - name: Install promtool
-        if: steps.cache-apt.outputs.cache-hit != 'true'
         run: |
           sudo apt-get update
           sudo apt-get install -y prometheus
           promtool --version # Check promtool version to verify installation
-          
-      - name: pwd
-        run: ls -al && pwd
 
       - name: Check config nodeinfra_prometheus.yml file
         working-directory: ./prometheus
         run: promtool check config nodeinfra_prometheus.yml
         if: success()
+
+      - name: Save cache
+        if: steps.cache-apt.outputs.cache-hit != 'true'
+        run: |
+          sudo cp -r /var/cache/apt/archives ~/.cache/apt/
 
       - uses: ibiqlik/action-yamllint@v3
         name: Check promethes/*.yml files
