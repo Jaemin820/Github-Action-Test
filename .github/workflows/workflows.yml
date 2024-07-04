@@ -14,20 +14,20 @@ jobs:
         uses: peimanja/promtool-github-actions@master
         with:
           promtool_actions_subcommand: 'config'
-          promtool_actions_files: 'prometheus/file_sd/*.yml'
+          promtool_actions_files: 'prometheus/nodeinfra_prometheus.yml'
           promtool_actions_version: '2.45.6'
           promtool_actions_comment: true
 
-      # - uses: ibiqlik/action-yamllint@v3
-      #   name: Check promethes/*.yml files
-      #   with:
-      #     file_or_dir: ./nodeinfra-prometheus/file_*/
-      #     config_data: |
-      #       extends: default
-      #       rules:
-      #         line-length: disable
-      #         document-start: disable
-      #     # no_warnings: true
+      - uses: ibiqlik/action-yamllint@v3
+        name: Check promethes/*.yml files
+        with:
+          file_or_dir: ./nodeinfra-prometheus/file_*/
+          config_data: |
+            extends: default
+            rules:
+              line-length: disable
+              document-start: disable
+          # no_warnings: true
       
       - name: Deploy Stage Server
         run: echo "Prometheus deploying to stage server2"
