@@ -24,7 +24,7 @@ jobs:
           promtool --version # Check promtool version to verify installation
           
       - name: pwd
-        run: pwd
+        run: pwd && ls
 
       - name: Check config nodeinfra_prometheus.yml file
         run: promtool check config ./prometheus/nodeinfra_prometheus.yml
